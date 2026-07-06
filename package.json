@@ -1,0 +1,41 @@
+{
+	"name": "wp-ai-tools",
+	"version": "0.0.1",
+	"license": "proprietary",
+	"private": true,
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"format": "wp-scripts format",
+		"translate": "pnpm run translate:pot && pnpm run translate:update",
+		"translate:pot": "wp i18n make-pot . languages/wp-ai-tools.pot --exclude=src",
+		"translate:update": "wp i18n update-po languages/wp-ai-tools.pot",
+		"translate:compile": "pnpm run translate:mo && pnpm run translate:js",
+		"translate:js": "wp i18n make-json languages --no-purge",
+		"translate:mo": "wp i18n make-mo languages",
+		"lint": "pnpm run lint:css && pnpm run lint:js",
+		"lint:css": "wp-scripts lint-style ./src/**/*.scss",
+		"lint:js": "wp-scripts lint-js ./src"
+	},
+	"dependencies": {
+		"react-router-dom": "^7.18.1"
+	},
+	"devDependencies": {
+		"@types/react": "^19.2.17",
+		"@types/react-dom": "^19.2.3",
+		"@wordpress/api-fetch": "^7.50.0",
+		"@wordpress/block-editor": "^15.23.0",
+		"@wordpress/components": "^36.1.0",
+		"@wordpress/compose": "^8.3.0",
+		"@wordpress/element": "^8.2.0",
+		"@wordpress/hooks": "^4.50.0",
+		"@wordpress/i18n": "^6.23.0",
+		"@wordpress/icons": "catalog:",
+		"@wordpress/scripts": "catalog:",
+		"glob": "catalog:",
+		"jquery": "^4.0.0",
+		"lodash": "^4.18.1",
+		"react": "^19.2.7"
+	}
+}

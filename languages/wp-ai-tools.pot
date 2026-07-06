@@ -1,0 +1,406 @@
+# Copyright (C) 2026 astappiev
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: AI Tools - Alt Text Generator 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-ai-tools\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-06T08:41:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-ai-tools\n"
+
+#. Plugin Name of the plugin
+#: wp-ai-tools.php
+msgid "AI Tools - Alt Text Generator"
+msgstr ""
+
+#. Description of the plugin
+#: wp-ai-tools.php
+msgid "Automatically generate descriptive, accessible alt text for your images using AI (BYOK) — improving accessibility compliance and SEO."
+msgstr ""
+
+#. Author of the plugin
+#: wp-ai-tools.php
+msgid "astappiev"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-ai-tools.php
+msgid "https://github.com/astappiev"
+msgstr ""
+
+#: includes/class-wp-ai-tools-admin.php:79
+#: includes/class-wp-ai-tools-admin.php:80
+msgid "AI Alt Generator"
+msgstr ""
+
+#: includes/class-wp-ai-tools-admin.php:150
+#: build/admin/blocks.js:1
+#: build/admin/settings.js:1
+msgid "Generate Alt Text"
+msgstr ""
+
+#: includes/class-wp-ai-tools-admin.php:202
+msgid "AI Alt Text Generation in Progress"
+msgstr ""
+
+#: includes/class-wp-ai-tools-admin.php:210
+#, php-format
+msgid "Processed %d of %d images."
+msgstr ""
+
+#: includes/class-wp-ai-tools-admin.php:211
+msgid "Process Next Batch"
+msgstr ""
+
+#. translators: %s: provider name
+#: includes/class-wp-ai-tools-cli.php:105
+#: includes/class-wp-ai-tools-cli.php:226
+#, php-format
+msgid "Unknown provider: %s. Valid options are: openai, anthropic."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:113
+msgid "An API key is required. Pass it with --key=<api-key>."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:117
+#, php-format
+msgid "Validating %s API key..."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:121
+msgid "API key validation failed."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:122
+#, php-format
+msgid "API key validation failed: %s"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:125
+msgid "API key validated successfully."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:127
+msgid "Skipping API key validation (--skip-validation)."
+msgstr ""
+
+#. translators: 1: provider name, 2: masked API key
+#: includes/class-wp-ai-tools-cli.php:146
+#, php-format
+msgid "Configured provider \"%1$s\" with key %2$s."
+msgstr ""
+
+#. translators: %1$s: provider name (used twice)
+#: includes/class-wp-ai-tools-cli.php:239
+#, php-format
+msgid "No API key configured for provider \"%1$s\". Run: wp ai-alt-text activate --provider=%1$s --key=<api-key>"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:254
+msgid "No images found to process."
+msgstr ""
+
+#. translators: 1: count, 2: provider name
+#: includes/class-wp-ai-tools-cli.php:264
+#, php-format
+msgid "Found %1$d image(s) to process with provider \"%2$s\"."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:271
+msgid "Dry run: the following attachment IDs would be processed (no API calls, no writes):"
+msgstr ""
+
+#. translators: %d: count
+#: includes/class-wp-ai-tools-cli.php:276
+#, php-format
+msgid "Dry run complete. %d image(s) would be processed."
+msgstr ""
+
+#. translators: %d: count
+#: includes/class-wp-ai-tools-cli.php:289
+#, php-format
+msgid "About to generate alt text for %d images. This will make live API calls and may incur costs. Continue?"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:303
+msgid "Generating alt text"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:312
+#, php-format
+msgid "Attachment %d: missing metadata, skipping."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:321
+#, php-format
+msgid "Attachment %d: file not found at %s, skipping."
+msgstr ""
+
+#. translators: 1: attachment ID, 2: file size in bytes, 3: max size in bytes
+#: includes/class-wp-ai-tools-cli.php:336
+#, php-format
+msgid "Attachment %1$d: file too large (%2$d bytes > %3$d limit), skipping."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:349
+#, php-format
+msgid "Attachment %d: unable to read file, skipping."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:357
+#, php-format
+msgid "Attachment %d: failed to encode image, skipping."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:369
+msgid "unknown error"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:370
+#, php-format
+msgid "Attachment %1$d: generation failed (%2$s)."
+msgstr ""
+
+#. translators: 1: succeeded count, 2: skipped count, 3: failed count
+#: includes/class-wp-ai-tools-cli.php:386
+#, php-format
+msgid "Done. Generated: %1$d, Skipped: %2$d, Failed: %3$d."
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:446
+#: includes/class-wp-ai-tools-cli.php:447
+msgid "yes"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:446
+#: includes/class-wp-ai-tools-cli.php:447
+msgid "no"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:455
+msgid "Active provider"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:459
+msgid "Model (provider default)"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:463
+msgid "OpenAI key configured"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:467
+msgid "Anthropic key configured"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:471
+msgid "Language"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:475
+msgid "Prompt"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:482
+msgid "Total image attachments"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:486
+msgid "With alt text"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:490
+msgid "Without alt text"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:495
+msgid "Configuration:"
+msgstr ""
+
+#: includes/class-wp-ai-tools-cli.php:499
+msgid "Coverage:"
+msgstr ""
+
+#: wp-ai-tools.php:28
+#: build/admin/settings.js:1
+msgid "Settings"
+msgstr ""
+
+#: build/admin/blocks.js:1
+msgid "Please select an image from the Media Library first."
+msgstr ""
+
+#: build/admin/blocks.js:1
+msgid "Generating alt text..."
+msgstr ""
+
+#: build/admin/blocks.js:1
+msgid "Alt text generated successfully!"
+msgstr ""
+
+#: build/admin/blocks.js:1
+msgid "Error generating alt text."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "An error occurred."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "AI Provider"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Enter API key here"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Get help for the API key here"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Model"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Enter the exact model name (e.g., gpt-4o-mini, claude-3-haiku-20240307)"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Prompt Template"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Customize the prompt used to generate alt text"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Generate on Upload"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Automatically generate alt text when images are uploaded"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Save Changes"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Select or Upload Image"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Use this image"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Test Prompt"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Test your prompt with a sample image."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Change Image"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Failed to generate alt text"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Error generating alt text"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Please select an image first"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Test Image"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Select an image to test your prompt."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Generated Alt Text:"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Bulk generation completed!"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Bulk Generation"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Generate alt text for multiple images at once."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Process All Images"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Generate alt text for all images, even if they already have it."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Processing stopped"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Error stopping processing"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Stop Processing"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Bulk generation started..."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "All images processed successfully!"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Error during processing"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Failed to start processing"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Error starting bulk processing"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Please set your API key first."
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Start Bulk Generation"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "General"
+msgstr ""
+
+#: build/admin/settings.js:1
+msgid "Testing"
+msgstr ""
