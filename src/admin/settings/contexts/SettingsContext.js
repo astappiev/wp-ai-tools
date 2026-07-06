@@ -2,7 +2,7 @@
 import React, { createContext, useEffect, useReducer } from 'react';
 import apiFetch from '@wordpress/api-fetch';
 import { __ } from '@wordpress/i18n';
-import { isEqual } from 'lodash';
+import { isEqual } from '../utils';
 
 export const SettingsContext = createContext( null );
 

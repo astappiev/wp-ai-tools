@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useState, useMemo } from 'react';
 import { SettingsContext } from '../contexts/SettingsContext';
 import { useContext } from '@wordpress/element';
-import { debounce, isEqual } from 'lodash';
+import { debounce, isEqual } from '../utils';
 import apiFetch from '@wordpress/api-fetch';
 import {
 	Button,

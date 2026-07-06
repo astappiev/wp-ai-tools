@@ -26,8 +26,7 @@ const processNextImage = async () => {
 
 const BulkGeneration = () => {
 	const { settings, updateStateSettings } = useContext( SettingsContext );
-	const { all_alt_text: allAltText = false, ai_provider: aiProvider } =
-		settings || {};
+	const { all_alt_text: allAltText = false } = settings || {};
 
 	const [ isProcessing, setIsProcessing ] = useState( false );
 	const [ progress, setProgress ] = useState( { total: 0, current: 0 } );
