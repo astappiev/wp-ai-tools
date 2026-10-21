@@ -1,4 +1,4 @@
-const wordpress = require('@wordpress/eslint-plugin');
+const wordpress = require( '@wordpress/eslint-plugin' );
 
 module.exports = [
 	...wordpress.configs.recommended,
